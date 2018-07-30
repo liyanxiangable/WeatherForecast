@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/weather.css">
+    <script src="js/calender.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <!--
+    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    -->
+</head>
+<body>
+<div id="cities">
+    <div id="add-city">
+        <button id="find-city" class="mimei">添加城市</button>
+    </div>
+    <div id="alternative">
+        <ul>
+            <li cityname="beijing" class="alternativeItem">北京</li>
+            <li cityname="shanghai" class="alternativeItem">上海</li>
+            <li cityname="guangzhou" class="alternativeItem">广州</li>
+            <li cityname="shenzhen" class="alternativeItem">深圳</li>
+            <li cityname="nanjing" class="alternativeItem">南京</li>
+            <li cityname="hangzhou" class="alternativeItem">杭州</li>
+            <li cityname="wuhan" class="alternativeItem">武汉</li>
+            <li cityname="xian" class="alternativeItem">西安</li>
+            <li cityname="shenyang" class="alternativeItem">沈阳</li>
+            <li cityname="chengdu" class="alternativeItem">成都</li>
+            <li cityname="chongqing" class="alternativeItem">重庆</li>
+            <li cityname="jinan" class="alternativeItem">济南</li>
+            <li cityname="qingdao" class="alternativeItem">青岛</li>
+            <li cityname="dalian" class="alternativeItem">大连</li>
+            <li cityname="zhengzhou" class="alternativeItem">郑州</li>
+            <li cityname="xiamen" class="alternativeItem">厦门</li>
+            <li cityname="taibei" class="alternativeItem">台北</li>
+            <li cityname="xianggang" class="alternativeItem">香港</li>
+            <li cityname="aomen" class="alternativeItem">澳门</li>
+            <li cityname="diaoyudao" class="alternativeItem">钓鱼岛</li>
+        </ul>
+        <span id="closeAlternative">
+            <img id="closeImg" src="icon/close.svg" />
+        </span>
+    </div>
+    <div id="original">
+        <div id="current-city" class="clickable">正在定位</div><img id="current-ico" src="icon/enter.svg" />
+        <div id="more-cities">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="detail">
+    <div id="todayInfo">
+        <div id="todayDate"></div>
+        <div id="todayAirQuality"></div>
+    </div>
+    <div id="daysWeather">
+        <div id="todayWeather">
+            <div id="actualPicture"></div>
+            <div id="actualTemperature"></div><!--
+         --><div id="afterActualTemperature">
+                <div id="actualRightUp"></div>
+                <div id="actualRightDown"></div>
+            </div>
+            <div id="todayTemperature" class="commonWeatherItem">
+                <div class="temperatureRange"></div>
+                <div class="weatherKind"></div>
+            </div>
+        </div><!--
+        --><div id="forecast">
+            <ul>
+                <li class="forecastItem" id="tian">
+                    <div class="forecastDate"></div>
+                    <div class="forecastPic"></div>
+                    <div class="commonWeatherItem">
+                        <div class="temperatureRange"></div>
+                        <div class="weatherKind"></div>
+                    </div>
+                </li><!--
+                --><li class="forecastItem" id="qi">
+                <div class="forecastDate"></div>
+                <div class="forecastPic"></div>
+                <div class="commonWeatherItem">
+                    <div class="temperatureRange"></div>
+                    <div class="weatherKind"></div>
+                </div>
+                </li><!--
+                --><li class="forecastItem" id="yu">
+                <div class="forecastDate"></div>
+                <div class="forecastPic"></div>
+                <div class="commonWeatherItem">
+                    <div class="temperatureRange"></div>
+                    <div class="weatherKind"></div>
+                </div>
+                </li><!--
+                --><li class="forecastItem" id="bao">
+                <div class="forecastDate"></div>
+                <div class="forecastPic"></div>
+                <div class="commonWeatherItem">
+                    <div class="temperatureRange"></div>
+                    <div class="weatherKind"></div>
+                </div>
+                </li><!--
+                -->
+            </ul>
+        </div>
+    </div>
+    <div id="detailWeather">
+        <div id="detailData">
+        </div>
+        <div id="navigation">
+            <ul>
+                <li>导</li>
+                <li>航</li>
+                <li>栏</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/weather.js"></script>
+</body>
+</html>
